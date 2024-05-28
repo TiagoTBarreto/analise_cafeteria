@@ -37,8 +37,8 @@ Para entender melhor a situação, o CEO Sr. Oliveira solicitou uma análise det
 | transaction_qty     | Quantidade de itens comprados na transação                                |
 | unit_price          | Preço unitário do produto                                                 |
 | Total_Bill          | Valor total da conta da transação                                         |
-| product_category    | Categoria do produto (ex.: Café, Chá,)                     |
-| product_type        | Tipo de produto (ex.: Chocolate Quente, Expresso)                               |
+| product_category    | Categoria do produto (ex.: coffee, tea)                     |
+| product_type        | Tipo de produto (ex.: hot chocolate, expresso)                               |
 | product_detail      | Detalhes específicos do produto (ex.: latte, cappuccino)                |
 | size                | Tamanho do produto (ex.: pequeno, médio, grande)                          |
 
@@ -62,11 +62,10 @@ O método SAPE garante uma abordagem organizada e eficiente para realizar análi
 
 ## 5.2 Categoria
 - As 3 categorias (33%) que representam 78% do faturamento são: Coffee, Tea, Bakery e 5 categorias(55%) representam 94% do faturamento.
-![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/964373d4-864a-4e95-adbc-678393abeef0)
-
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/ccb6ed6b-6431-4927-b63b-6c5c9db169ef)
 
 - Todas categorias mantiveram sua participação constante ao longo dos meses.
-![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/5ba94df4-feb7-4da1-8620-e3112f8bb5a0)
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/964373d4-864a-4e95-adbc-678393abeef0)
 
 
 ## 5.3 Produto
