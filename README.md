@@ -44,7 +44,14 @@ Para entender melhor a situação, o CEO Sr. Oliveira solicitou uma análise det
 
  
 # 4. Descrição da solução
-Foram realizadas 4 tipos diferentes de Análise para responder as demandas do CEO, Descritiva, Diagnóstica, Preditiva e Prescritiva. Utilizando do método SAPE para um planejamento prévio de cada uma das etapas.
+Para atender às demandas do CEO, foram realizadas quatro tipos distintas de análise: Descritiva, Diagnóstica, Preditiva e Prescritiva. Cada uma dessas etapas foi cuidadosamente planejada e executada utilizando o método SAPE (Situação, Análise, Plano e Execução). A seguir, descrevemos cada uma das análises realizadas:
+
+## Método SAPE:
+1. Saída: Definição clara do resultado desejado da análise.
+2. Processo: Etapas específicas para coletar, processar e analisar os dados.
+3. Entrada: Recursos necessários, como dados, habilidades da equipe e ferramentas.
+
+O método SAPE garante uma abordagem organizada e eficiente para realizar análises, garantindo que as informações sejam obtidas e processadas de forma adequada para atender aos objetivos definidos.
 
 
 # 5. Análise Descritiva
