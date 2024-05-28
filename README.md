@@ -55,8 +55,38 @@ O método SAPE garante uma abordagem organizada e eficiente para realizar análi
 
 
 # 5. Análise Descritiva
-1. A tendência do faturamento é positiva. A empresa está crescendo.
+## 5.1 Ao longo do tempo 
+- A tendência do faturamento é positiva. A empresa está crescendo.
 ![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/61562d69-c8c7-4083-ac1d-fe1c475e32ad)
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/28aca5bd-6392-43aa-8942-8fe393911bad)
+
+## 5.2 Categoria
+- As 3 categorias (33%) que representam 78% do faturamento são: Coffee, Tea, Bakery e 5 categorias(55%) representam 94% do faturamento.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/964373d4-864a-4e95-adbc-678393abeef0)
+
+
+- Todas categorias mantiveram sua participação constante ao longo dos meses.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/5ba94df4-feb7-4da1-8620-e3112f8bb5a0)
+
+
+## 5.3 Produto
+- Os 4 produtos que mais contribuem no faturamento são: Barista Expresso, Brewed Chai Tea, Hot Chocolate e Gourmet Brewed Coffee.
+- Por outro lado, Green Beans, Green Tea e Organic Chocolate são os 3 produtos que menos contribuem.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/0a6d6f96-fd70-4b04-9a04-613dfff38724)
+
+## 5.4 Loja
+- As 3 lojas tem uma participação semelhante na receita da rede e manteram sua participação constante ao longo dos meses.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/784b14d4-12e9-4753-b94c-322fd235d43e)
+
+## 5.5 Sazonalidade
+- O faturamento aos finais de semana tem uma leve redução e os dias de semana tem uma contribuição semelhante.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/ebeb435b-6acc-455e-a19d-0f8e839ac5a8)
+
+- O maior volume ocorre entre as 7:00 às 11:00, depois das 11:00 até as 18:00 se mantém costante um volume médio, após as 19:00 começa a cair e depois das 20:00 tem pouquíssimos pedidos.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/24a24551-4d2a-4d8a-a17e-4d60b8038f98)
+
+
+
 
 
 ## 5.1 PCA
