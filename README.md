@@ -154,6 +154,21 @@ Para construir o modelo de Série Temporal, realizei os seguintes passos:
 
 # 9.0 Resultado Final
 
+## 1. Como está a saúde da rede de cafeterias, no geral?
+- O faturamento ao longo do tempo está aumentando, a rede está indo bem.
+## 2. Existe algum motivo do porque a rede está indo bem ou mal? 
+- Os motivos são naturais, está aumentando o número de pedidos e consequemente o número de itens comprados e o faturamento da empresa.
+- Apesar do aumento de pedidos, o tamanho da cesta médio e do Ticket Médio gasto pelos clientes se mantém constante durante o ano.
+- O crescimento foi praticamente igual nas diferentes lojas.
+## 3. Previsão de faturamento para os próximos 30 dias (Julho de 2023).
+- A previsão de vendas foi de R$ 189.053,81 com um erro de 8.66% para cima ou para baixo.
+- Intervalo: R$ 172.677,56 e R$ 205.430,06
+## 4. Recomendações para alavancar ainda mais o negócio.
+- Realizar Cross-Sell (oferecer novos produtos para aumentar o tamanho da cesta dos clientes), a expectativa é que um aumento de 1 item no tamanho médio da cesta vai trazer um retorno de R$ 2.139,38 no Faturamento diário.
+- Ao aumentar o tamanho da cesta dos clientes vai aumentar também o Ticket Médio. Pois a empresa está muito dependendente do aumento do número de pedidos e ao aumentar os gastos por compra vai conseguir ter uma escalabilidade ainda maior.
+- Focar em aumentar o número de pedidos, a cada pedido a expectativa é que aumente R$ 5,77 no faturamento da empresa.
+- Não focar em criar novas categorias, pois tem uma relação negativa com o faturamento.
+- O número de tipo de produtos tem uma relação positiva com o faturamento, a expectativa é que o aumento de um tipo de produto aumente R$ 57,53 no faturamento.
 
 
 
