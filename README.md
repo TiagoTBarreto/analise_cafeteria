@@ -127,19 +127,35 @@ Para construir o modelo de Série Temporal, realizei os seguintes passos:
 ## 7.2 Encontrar a Tendência
 1. Desazonalizar o faturamento: Faturamento Real / Erro Embutido
 2. Treinar uma Regressão Linear e encontrar a tendência.
+
 ![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/94951778-af77-4c43-95b5-05a89c427350)
+- Tendência foi definida como 1951 + 21.17x
 
 ## 7.3 Resultado Final
-Previsão = Sazonalidade * Erro * Tendência
-Previsão para o mês de Julho: R$ 189.053,81 
+- Previsão = Sazonalidade * Erro * Tendência
+- Previsão para o mês de Julho: R$ 189.053,81 
 ### 7.3.1 Erro do Modelo
 - MAPE: 8.66%
 - Então a previsão do faturamento vendas tem um erro embutido de 8.66% para mais ou menos. Então as vendas vão ser entre o intervalo de R$ 172.677,56 e R$ 205.430,06.
 
- 
+### 7.3.2 Gráfico das Previsões
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/d5ed9d3b-82ea-431b-bf89-b9650ecceac9)
+
+# 8. Análise Prescritiva
+## 8.1 Análise de Regressão do Fenômeno Faturamento
+- Possível observar que todas as 4 variáveis: Pedidos, Categorias Únicas, Tipo de Produto Único e Basket Size tem uma relação com Faturamento com respaldo estatístico (p-value < 0.05).
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/7631dff5-a1c2-4a9b-8146-9098d259caac)
+
+## 8.2 Prescrições
+- Realizar Cross-Sell (oferecer novos produtos para aumentar o tamanho da cesta dos clientes), a expectativa é que um aumento de 1 item no tamanho médio da cesta vai trazer um retorno de R$ 2.139,38 no Faturamento diário.
+- Focar em aumentar o número de pedidos, a cada pedido a expectativa é que aumente R$ 5,77 no faturamento da empresa.
+- Não focar em criar novas categorias, pois tem uma relação negativa com o faturamento.
+- O número de tipo de produtos tem uma relação positiva com o faturamento, a expectativa é que o aumento de um tipo de produto aumente R$ 57,53 no faturamento.
+
+# 9.0 Resultado Final
 
 
-### 
+
 
 
  
