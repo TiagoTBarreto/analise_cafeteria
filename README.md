@@ -1,82 +1,57 @@
-# Programa Insiders - Fidelização de Clientes
+# Análise de Dados - Rede de Cafeterias
 <p align="center">
   <img src="https://github.com/TiagoTBarreto/Insiders/assets/137197787/81928318-1718-4b29-b767-e163690e19f7" width="100%" height="300">
 </p>
 
 # 1. Problema de Negócio
 
-Outlet Multimarcas é uma empresa de e-commerce que se destaca pela venda de produtos de segunda linha. Ao longo do tempo, observou-se um comportamento de compra distinto em uma minoria de clientes, que representa uma parte considerável do faturamento da empresa.
+A Aroma Café é uma rede de cafeteria que está no mercado há dez anos, preenchendo uma lacuna no mercado local por cafeterias de alta qualidade. A loja no centro da cidade tem sido uma fonte de orgulho, com uma clientela fiel e uma equipe dedicada. No entanto, nos últimos meses, houve flutuações nas vendas e no fluxo de clientes, causando preocupação sobre possíveis desafios operacionais.
 
-Diante desse insight, a empresa decidiu agir proativamente, buscando segmentar seus clientes com base nesses padrões de consumo. O objetivo é criar um programa de fidelidade, nomeado de "Insiders", para atender às necessidades específicas desses clientes mais engajados.
+Para entender melhor a situação, o CEO Sr. Oliveira solicitou uma análise detalhada da operação das lojas para responder as seguintes perguntas:
 
-Essa segmentação mais refinada permitirá à empresa direcionar suas estratégias de marketing de forma mais precisa, personalizando as ofertas e experiências para diferentes grupos de clientes. Dessa forma, a Outlet Multimarcas espera fortalecer ainda mais o relacionamento com seus clientes de alto valor e impulsionar o crescimento do negócio.
-## 1.1 Relatório respondendo as seguintes perguntas:
-1. Quem são as pessoas elegíveis para participar do programa de Insiders?
-2. Quantos clientes farão parte do grupo?
-3. Quais as principais características desses clientes?
-4. Qual a % de contribuição do faturamento, vinda do Insiders?
-5. Quais as condições para uma pessoa ser elegível ao Insiders?
-6. Quais as condições para uma pessoa ser removida do Insiders?
-7. Qual a garantia que o programa Insiders é melhor que o restante da base?
-8. Quais ações o time de marketing pode realizar para aumentar o faturamento?
+1. Como está a saúde da rede de cafeterias, no geral?
+2. Existe algum motivo do porque a rede está indo bem ou mal? 
+3. Previsão de faturamento para os próximos 30 dias (Julho de 2023).
+4. Recomendações para alavancar ainda mais o negócio.
 
 # 2. Ferramentas Utilizadas
 
 **Ferramentas para Análise de Dados**
-- Python 3.11.4: A linguagem de programação principal usada para desenvolver o projeto.
-- Estatística (Descritiva, Teste de Hipóteses e Intervalo de Confiança)
-
-**Biblioteca de Machine Learning e Otimização:**
-- Scikit-learn: Empregado para a preparação de dados, treinamento de modelos, avaliação de desempenho.
-- Scipy: Implementação de algoritmos de Clusterização.
-- Tensorflow: Implementação de Rede Neural para Time Series.
-
-**Biblioteca de Avaliação Clusterização**
-- Yellowbrick: utilizada na plotagem de gráficos de silhueta, juntamente com outras métricas relevantes, facilitando o processo de ajuste fino do modelo de clusterização.
-
-**Espaços de Embedding**
-- UMAP: Utilizado para redução de dimensionalidade e preservação de relações de proximidade.
-- t-SNE: Empregado para visualização de padrões e clusters em espaços de alta dimensionalidade.
-- PCA: Aplicado para redução de dimensionalidade e identificação de principais características.
-- Tree-Based Embedding (Random Forest): Utilizado para representação de dados em um espaço de embedding baseado em árvores de decisão.
-
-**Desenvolvimento e Controle de Versão:**
-- Git: Ferramenta de versionamento de código para rastrear alterações e colaboração em equipe.
-- Pyenv (Ambiente Virtual): Utilizado para isolar dependências e gerenciar versões do Python.
-
-**Implantação e Exposição do Modelo:**
-- Papermill: Automatiza a execução e personalização do Jupyter Notebook.
-- Cronjob: Agenda tarefas para manter o modelo atualizado e em execução regularmente.
-- Amazon S3: Armazenamento do conjuntos de dados, modelos e artefatos importantes de forma segura e escalável.
-- Amazon RDS (Postgres): Banco de dados relacional onde foi guardado o output do modelo.
-- Amazon EC2: Hospeda e executa a aplicação do modelo na nuvem.
+- Excel
+- Estatística Descritiva
+- Análise de Regressão
+- Previsão de Série Temporal
 
 **Habilidades e Abordagem:**
 - Pensamento Crítico e Resolução de Problemas: Habilidades fundamentais aplicadas para analisar, solucionar problemas e tomar decisões ao longo do projeto.
 
 # 3. Descrição dos Dados 
-| Campo        | Descrição                                                                    |
-|--------------|------------------------------------------------------------------------------|
-| InvoiceNo    | Número de identificação único da compra.                                      |
-| StockCode    | Código único do item no estoque.                                              |
-| Description  | Descrição do item.                                                            |
-| Quantity     | Quantidade do item.                                        |
-| InvoiceDate  | Data da compra.                                                               |
-| UnitPrice    | Preço unitário do item.                                                       |
-| CustomerID   | Identificador único do cliente.                                               |
-| Country      | País do cliente.                                                              |
+| Campo            | Descrição                                                                 |
+|---------------------|---------------------------------------------------------------------------|
+| transaction_id      | Identificador único da transação                                          |
+| transaction_date    | Data em que a transação foi realizada                                     |
+| transaction_time    | Hora em que a transação foi realizada                                     |
+| store_id            | Identificador único da loja onde a transação ocorreu                      |
+| store_location      | Localização da loja onde a transação ocorreu                              |
+| product_id          | Identificador único do produto                                            |
+| transaction_qty     | Quantidade de itens comprados na transação                                |
+| unit_price          | Preço unitário do produto                                                 |
+| Total_Bill          | Valor total da conta da transação                                         |
+| product_category    | Categoria do produto (ex.: Café, Chá,)                     |
+| product_type        | Tipo de produto (ex.: Chocolate Quente, Expresso)                               |
+| product_detail      | Detalhes específicos do produto (ex.: latte, cappuccino)                |
+| size                | Tamanho do produto (ex.: pequeno, médio, grande)                          |
+
  
 # 4. Descrição da solução
-Foi empregado o método de gerenciamento CRIPS-DM, que tem como objetivo o desenvolvimento de projetos de Data Science de forma cíclica. Esse método é abrangente e, ao concluir um ciclo, você obterá:
-- Uma versão completa da solução.
-- Maior rapidez na entrega de valor.
-- Mapeamento de todos os possíveis problemas.
-
-O CRIPS-DM é composto pelos seguintes passos: 
-![image](https://github.com/TiagoTBarreto/Rossmann_Sales/assets/137197787/f4cac96f-a228-4e28-b5a2-eb16f29d5a39)
+Foram realizadas 4 tipos diferentes de Análise para responder as demandas do CEO, Descritiva, Diagnóstica, Preditiva e Prescritiva. Utilizando do método SAPE para um planejamento prévio de cada uma das etapas.
 
 
-# 5. Redução de Dimensionalidade com Espaços de Embedding
+# 5. Análise Descritiva
+1. A tendência do faturamento é positiva. A empresa está crescendo.
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/61562d69-c8c7-4083-ac1d-fe1c475e32ad)
+
+
 ## 5.1 PCA
 ![image](https://github.com/TiagoTBarreto/Insiders/assets/137197787/cd006cb1-fd38-4756-a483-a49aacf8009b)
 
