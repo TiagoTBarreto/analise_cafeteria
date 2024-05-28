@@ -1,11 +1,11 @@
-# Análise de Dados - Rede de Cafeterias
+# Análise de Dados - Aroma Café
 <p align="center">
   <img src="https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/75e918bb-6d64-4599-b3fb-b85a28fbbd6f" width="100%" height="500">
 </p>
 
 # 1. Problema de Negócio
 
-A Aroma Café é uma rede de cafeteria que está no mercado há dez anos, preenchendo uma lacuna no mercado local por cafeterias de alta qualidade. A loja no centro da cidade tem sido uma fonte de orgulho, com uma clientela fiel e uma equipe dedicada. No entanto, nos últimos meses, houve flutuações nas vendas e no fluxo de clientes, causando preocupação sobre possíveis desafios operacionais.
+A Aroma Café é uma rede de cafeterias que está no mercado há dez anos, preenchendo uma lacuna no mercado local por cafeterias de alta qualidade. A loja no centro da cidade tem sido uma fonte de orgulho, com uma clientela fiel e uma equipe dedicada. No entanto, nos últimos meses, houve flutuações nas vendas e no fluxo de clientes, causando preocupação sobre possíveis desafios operacionais.
 
 Para entender melhor a situação, o CEO Sr. Oliveira solicitou uma análise detalhada da operação das lojas para responder as seguintes perguntas:
 
