@@ -79,7 +79,8 @@ O método SAPE garante uma abordagem organizada e eficiente para realizar análi
 
 ## 5.5 Sazonalidade
 - O faturamento aos finais de semana tem uma leve redução e os dias de semana tem uma contribuição semelhante.
-![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/ebeb435b-6acc-455e-a19d-0f8e839ac5a8)
+![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/10d8360d-c0ae-4305-ad76-ec3d6489a17f)
+
 
 - O maior volume ocorre entre as 7:00 às 11:00, depois das 11:00 até as 18:00 se mantém costante um volume médio, após as 19:00 começa a cair e depois das 20:00 tem pouquíssimos pedidos.
 ![image](https://github.com/TiagoTBarreto/analise_cafeteria/assets/137197787/24a24551-4d2a-4d8a-a17e-4d60b8038f98)
